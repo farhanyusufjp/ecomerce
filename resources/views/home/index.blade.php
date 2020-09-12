@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-left mb-40">
-                                <h2 class="uppercase">Featured product</h2>
+                                <h2 class="uppercase">Featured brand</h2>
                                 <h6>There are many variations of passages of brands available,</h6>
                             </div>
                         </div>
