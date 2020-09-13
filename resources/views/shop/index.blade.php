@@ -44,13 +44,13 @@
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="product-item">
                                                     <div class="product-img">
-                                                        <a href="single-product.html">
+                                                        <a href="detail">
                                                             <img src="img/product/7.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name </a>
+                                                            <a href="{{ url('detail1') }}">Product Name </a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>

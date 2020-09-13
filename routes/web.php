@@ -15,6 +15,7 @@
 Route::get('/','pagecontroller@home');
 
 Route::get('shop','controllerShop@index');
+// Route::get('detail1','controllerShop@detail');
 
 Route::get('about','pagecontroller@about');
 

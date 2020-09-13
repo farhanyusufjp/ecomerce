@@ -1,5 +1,9 @@
 @extends('layout.master')
+
 @section('content')
+
+@include('layout.banner')
+
   <section id="page-content" class="page-wrapper">
 
                         

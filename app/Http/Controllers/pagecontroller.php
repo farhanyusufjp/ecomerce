@@ -19,4 +19,9 @@ class pagecontroller extends Controller
     public function experience() {
         return view('experience.index');
     }
+
+    public function contact() {
+        return view('contact.index');
+    }
+
 }
