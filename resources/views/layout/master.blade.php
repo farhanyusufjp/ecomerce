@@ -96,9 +96,9 @@
                             <div class="col-md-8 hidden-sm hidden-xs">
                                 <nav id="primary-menu">
                                     <ul class="main-menu text-center">
-                                        <li><a href="{{ url('home') }}">Home</a></li>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
                                             
-                                        <li class="mega-parent"><a href="#">Experience</a>
+                                        <li class="mega-parent"><a href="{{ url('experience') }}">Experience</a>
                                             
                                         </li>
                                         <li class="mega-parent"><a href="{{ url('shop') }}">Products</a>

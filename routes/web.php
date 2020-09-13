@@ -12,20 +12,16 @@
 */
 
 
-Route::get('/','controllerhome@index');
+Route::get('/','pagecontroller@home');
 
 Route::get('shop','controllerShop@index');
 
-Route::get('about','controllerAbout@index');
-Route::get('experience','pagecontroller@experience');
+Route::get('about','pagecontroller@about');
+
+Route::get('experience','controllerExperience@experience');
+Route::get('detail','controllerExperience@detail');
 
 Route::get('contact','pagecontroller@contact');
-Route::get('partners','pagecontroller@partners');
-
-
-Route::get('partners','pagecontroller@partners');
-
-Route::get('gajelas','pagecontroller@gajelas');
 
 // Route::get('about', 'pagecontroller@about');
 
