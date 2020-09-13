@@ -24,6 +24,7 @@ Route::get('home','controllerhome@index');
 Route::get('shop','controllerShop@index');
 
 Route::get('about','controllerAbout@index');
+Route::get('experience','pagecontroller@experience');
 
 
 // Route::get('about', 'pagecontroller@about');
