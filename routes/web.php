@@ -17,6 +17,7 @@ Route::get('/','controllerhome@index');
 Route::get('shop','controllerShop@index');
 
 Route::get('about','controllerAbout@index');
+Route::get('experience','pagecontroller@experience');
 
 Route::get('contact','pagecontroller@contact');
 Route::get('partners','pagecontroller@partners');
