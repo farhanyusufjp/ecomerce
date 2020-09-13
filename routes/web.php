@@ -22,7 +22,11 @@ Route::get('experience','pagecontroller@experience');
 Route::get('contact','pagecontroller@contact');
 Route::get('partners','pagecontroller@partners');
 
+
+Route::get('partners','pagecontroller@partners');
+
 Route::get('gajelas','pagecontroller@gajelas');
+
 // Route::get('about', 'pagecontroller@about');
 
 
