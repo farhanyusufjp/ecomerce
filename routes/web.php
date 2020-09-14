@@ -26,5 +26,7 @@ Route::get('contact','pagecontroller@contact');
 
 // Route::get('about', 'pagecontroller@about');
 
+Route::get('asal','pagecontroller@asal');
+
 
 
