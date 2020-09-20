@@ -56,7 +56,7 @@
                             <div class="top-link clearfix">
                                 <ul class="link f-right">
                                     <li>
-                                        <a href="my-account.html">
+                                        <a href="{{ url('myacc')}}">
                                             <i class="zmdi zmdi-account"></i>
                                             My Account
                                         </a>
@@ -68,7 +68,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="login.html">
+                                        <a href="{{ url('login') }}">
                                             <i class="zmdi zmdi-lock"></i>
                                             Login
                                         </a>
@@ -229,7 +229,7 @@
                                                 <li>
                                                     <div class="top-cart-inner check-out">
                                                         <h4 class="text-uppercase">
-                                                            <a href="#">Check out</a>
+                                                            <a href="{{ url('checkout') }}">Check out</a>
                                                         </h4>
                                                     </div>
                                                 </li>

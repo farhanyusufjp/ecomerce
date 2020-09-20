@@ -1,4 +1,4 @@
-@extends('layour.master')
+@extends('layout.master')
 @section('content')
  <section id="page-content" class="page-wrapper">
 
@@ -497,5 +497,4 @@
             <!-- SHOP SECTION END -->             
 
         </section>
-
 @stop

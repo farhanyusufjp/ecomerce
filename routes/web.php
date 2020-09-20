@@ -15,7 +15,8 @@
 Route::get('/','pagecontroller@home');
 
 Route::get('shop','controllerShop@index');
-// Route::get('detail1','controllerShop@detail');
+Route::get('detailshop','controllerShop@detail');
+Route::get('checkout','controllerShop@checkout');
 
 Route::get('about','pagecontroller@about');
 
@@ -27,6 +28,13 @@ Route::get('contact','pagecontroller@contact');
 // Route::get('about', 'pagecontroller@about');
 
 Route::get('asal','pagecontroller@asal');
+
+Route::get('myacc','AccountController@index');
+Route::get('login','AccountController@login');
+Route::get('register','AccountController@register');
+
+
+
 
 
 

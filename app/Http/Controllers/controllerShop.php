@@ -9,7 +9,10 @@ class controllerShop extends Controller
      public function index() {
         return view('shop.index');
     }
-     public function detail(shop $shop) {
-        return view('minuman.detail', compact('detail'));
+     public function detail() {
+        return view('shop.detail');
+    }
+     public function checkout() {
+        return view('shop.checkout');
     }
 }
