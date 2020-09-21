@@ -23,5 +23,7 @@ class pagecontroller extends Controller
     public function contact() {
         return view('contact.index');
     }
-
+    public function partner() {
+        return view('partner.index');
+    }
 }

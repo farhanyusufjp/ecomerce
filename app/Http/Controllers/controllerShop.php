@@ -15,4 +15,10 @@ class controllerShop extends Controller
      public function checkout() {
         return view('shop.checkout');
     }
+     public function wishlist() {
+     	return view('shop.wishlist');
+     }
+     public function chart() {
+     	return view('shop.chart');
+     }
 }

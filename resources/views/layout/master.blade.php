@@ -62,7 +62,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="wishlist.html">
+                                        <a href="{{ url('wishlist') }} ">
                                             <i class="zmdi zmdi-favorite"></i>
                                             Wish List (0)
                                         </a>
@@ -104,7 +104,7 @@
                                         <li class="mega-parent"><a href="{{ url('shop') }}">Products</a>
                                             </li>
 
-                                        <li class="mega-parent"><a href="#">Partner</a>
+                                        <li class="mega-parent"><a href="{{ url('partner') }}">Partners</a>
                                         </li>
 
                                         <li>
@@ -222,7 +222,7 @@
                                                 <li>
                                                     <div class="top-cart-inner view-cart">
                                                         <h4 class="text-uppercase">
-                                                            <a href="#">View cart</a>
+                                                            <a href="{{ url('wishlist') }} ">View cart</a>
                                                         </h4>
                                                     </div>
                                                 </li>

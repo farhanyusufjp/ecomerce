@@ -8,8 +8,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-left ">
-                                <h2 class="uppercase">about subas</h2>
-                                <h6 class="mb-40">There are many variations of passages of brands available,</h6>
+                                <h2 class="uppercase">about us</h2>
+                                <h6 class="mb-40">PT INTAN SARANA SEJAHTERA</h6>
                             </div>
                         </div>
                     </div>                    
@@ -21,12 +21,16 @@
                         </div>
                         <div class="col-md-7">
                             <div class="about-description mt-50">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo
-                                et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Menjual alat alat laboratorium seperti alat hematology analuzer alat kimia analyzer alat blod gas darah alat imunoserologi dan lain lain, Menjual alat furnitur rumah sakit, Alat pengolah limbah medis padat, alat ventilator, alat pasien monitor, alat anastesi dan lain sebagainya dengan bekerja sama dengan prinsipal seperti philip mindray, GE rayto dimeda dan lain lain. Kami bekerja sama dengan rumah sakit pemerintah dan swasta.</p>
 
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia is be deserunt mollit anim est laborum. Sed ut perspiciatis unde omnis iste natus error sit. voluptatem accusantium doloremque laudantium,</p>
 
-                                <p>totam remes aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam.</p>
+                                <h6><b>OUR VISION</b></h6>
+                                <p>- Menjadi penyedia peralatan kesehatan terkemuka baik dalam daerah maupun luar daerah.</p>
+                                <p>- Menjadi distributor alat kesehatan yang terpercaya dengan produk berkualitas dan pelayanan yang memuaskan.</p>
+
+                                <h6><b>OUR MISION</b></h6>
+                                <p>- Memenuhi kebutuhan masyarakat akan peralatan kesehatan dengan menyalurkan produk terbaik dari segi keamanan dan kualitas.</p>
+                                <p>- Mencapai kepuasan pelanggan dengan memberikan pelayanan terbaik dari SDM yang professional..</p>
                             </div>
                         </div>
                     </div>
