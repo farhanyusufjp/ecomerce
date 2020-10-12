@@ -1,3 +1,8 @@
+@extends('layout.master')
+
+@section('content')
+
+
 <div id="barang">
 	<h2>Barang</h2>
 
@@ -45,3 +50,6 @@
 		<p>&copy; 2020 ISS</p>
 	</div>
 </div>
+
+</section>
+@stop
