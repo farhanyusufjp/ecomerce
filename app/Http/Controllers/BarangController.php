@@ -9,7 +9,7 @@ class BarangController extends Controller
 {
    public function index() {
         $halaman ='barang';
-        $barang_list = Barang::orderBy('nama_barang','Desc')->paginate(10);
+        $barang_list = Barang::orderBy('nama_barang','Desc')->paginate(5);
         return view('barang.index',compact('halaman','barang_list'));
     }
 
