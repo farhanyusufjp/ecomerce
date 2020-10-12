@@ -12,7 +12,7 @@
                                 <h2 class="slider2-title-3">THE WAY OF TRUST </h2>
                             </div>
                             <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
-                                <h2 class="slider2-title-3">MEDICAL & LABOLATORIUM EQUIPMENT</h2>
+                                <h2 class="slider2-title-3">MEDICAL & LABOLATORIUM EQUIPMENT asdadasdsa</h2>
                             </div>
                             
                         </div>
