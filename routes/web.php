@@ -14,6 +14,8 @@
 
 Route::get('/','pagecontroller@home');
 
+Route::get('barang','BarangController@index');
+
 Route::get('shop','controllerShop@index');
 Route::get('detailshop','controllerShop@detail');
 Route::get('checkout','controllerShop@checkout');
