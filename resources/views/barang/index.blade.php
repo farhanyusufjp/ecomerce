@@ -35,6 +35,10 @@
 		@else
 		<p>Tidak ada Data barang</p>
 		@endif
+
+		<div id="paging">
+			{{ $barang_list->links()}}
+		</div>
 	
 
 	<div id="footer">
