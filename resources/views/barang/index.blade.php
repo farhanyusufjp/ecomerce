@@ -1,3 +1,8 @@
+'@extends('layout.master')
+
+@section('content')
+
+
 <div id="barang">
 	<h2>Barang</h2>
 
@@ -35,9 +40,16 @@
 		@else
 		<p>Tidak ada Data barang</p>
 		@endif
+
+		<div id="paging">
+			{{ $barang_list->links()}}
+		</div>
 	
 
 	<div id="footer">
 		<p>&copy; 2020 ISS</p>
 	</div>
 </div>
+
+</section>
+@stop
