@@ -70,7 +70,7 @@
                                     <li>
                                         <a href="{{ url('login') }}">
                                             <i class="zmdi zmdi-lock"></i>
-                                            Login
+                                            Loginssss
                                         </a>
                                     </li>
                                 </ul>
