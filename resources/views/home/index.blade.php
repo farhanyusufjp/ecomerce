@@ -19,6 +19,7 @@
                             </div>
                         </div>
                     </div>
+                   
                     <div class="featured-product">
                         <div class="row active-featured-product slick-arrow-2">
                             <!-- product-item start -->
@@ -29,83 +30,32 @@
                                             <img src="img/product/1.jpg" alt=""/>
                                         </a>
                                     </div>
+                                       @if (!empty($barang_list))
+                                      @foreach($barang_list as $barang)
                                     <div class="product-info">
                                         <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">Product Name</a>
+                                            <a href="{{ url('shop') }}">{{ $barang->nama_barang }}</a>
                                         </h6>
-                                       
+                                      @endforeach
                                         
                                     </div>
                                 </div>
                             </div>
+                            @else
+                             <p>Tidak ada Data barang</p>
+                             @endif
+                             <!-- product-item end -->
+                            <!-- product-item start -->
+                       
                             <!-- product-item end -->
                             <!-- product-item start -->
-                            <div class="col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <a href="{{ url('shop') }}">
-                                            <img src="img/product/2.jpg" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">Product Name</a>
-                                        </h6>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                        
                             <!-- product-item end -->
                             <!-- product-item start -->
-                            <div class="col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <a href="{{ url('shop') }}">
-                                            <img src="img/product/3.jpg" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">Product Name</a>
-                                        </h6>
-                                       
-                                    </div>
-                                </div>
-                            </div>
+                          
                             <!-- product-item end -->
                             <!-- product-item start -->
-                            <div class="col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <a href="{{ url('shop') }}">
-                                            <img src="img/product/4.jpg" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">Product Name</a>
-                                        </h6>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- product-item end -->
-                            <!-- product-item start -->
-                            <div class="col-xs-12">
-                                <div class="product-item">
-                                    <div class="product-img">
-                                        <a href="{{ url('shop') }}">
-                                            <img src="img/product/4.jpg" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">Product Name</a>
-                                        </h6>
-                                      
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <!-- product-item end -->
                         </div>
                     </div>          
