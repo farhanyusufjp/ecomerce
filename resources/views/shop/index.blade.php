@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('content')
+
   <div id="page-content" class="page-wrapper">
 
             <!-- SHOP SECTION START -->
@@ -45,21 +46,21 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="{{ url('detailshop') }}">
-                                                            <img src="img/product/7.jpg" alt=""/>
+                                                            <img src="img/product/CMC.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="{{ url('detailshop') }}">Product Name </a>
+                                                            <a href="{{ url('detailshop') }}">CLINCHEM MULTI CONTROL LV I </a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                           <a href="#"><i class="zmdi zmdi-star"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 100.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -83,12 +84,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/2.jpg" alt=""/>
+                                                            <img src="img/product/CL.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">M-18 CFL LYSE</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -97,7 +98,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 150.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -121,12 +122,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/9.jpg" alt=""/>
+                                                            <img src="img/product/CL53.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">M-53 CLEANSER</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -135,7 +136,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 300.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -159,12 +160,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/4.jpg" alt=""/>
+                                                            <img src="img/product/TCC.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">TABUNG CLOT ACTIVATOR</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -173,7 +174,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 230.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -197,12 +198,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/10.jpg" alt=""/>
+                                                            <img src="img/product/TE.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">TABUNG EDTA</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -211,7 +212,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 300.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -235,12 +236,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/11.jpg" alt=""/>
+                                                            <img src="img/product/WJ.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">WIDAL B-JESS</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -249,7 +250,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 150.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -273,12 +274,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/8.jpg" alt=""/>
+                                                            <img src="img/product/TCM.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">TOTAL CHOLESTEROL MINDRAY</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -287,7 +288,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 100.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -311,12 +312,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/12.jpg" alt=""/>
+                                                            <img src="img/product/L(I).jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">M-53 LEO (I) LYSE</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -325,7 +326,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 300.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
@@ -349,12 +350,12 @@
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="single-product.html">
-                                                            <img src="img/product/12.jpg" alt=""/>
+                                                            <img src="img/product/LL(II).jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="single-product.html">Product Name</a>
+                                                            <a href="single-product.html">M-53 LEO (II) LYSE</a>
                                                         </h6>
                                                         <div class="pro-rating">
                                                             <a href="#"><i class="zmdi zmdi-star"></i></a>
@@ -363,7 +364,7 @@
                                                             <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                                                             <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
                                                         </div>
-                                                        <h3 class="pro-price">$ 869.00</h3>
+                                                        <h3 class="pro-price">Rp 200.000</h3>
                                                         <ul class="action-button">
                                                             <li>
                                                                 <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>

@@ -27,14 +27,14 @@
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href="{{ url('shop') }}">
-                                            <img src="img/product/1.jpg" alt=""/>
+                                            <img src="img/product/CMC.jpg" alt=""/>
                                         </a>
                                     </div>
                                        @if (!empty($barang_list))
                                       @foreach($barang_list as $barang)
                                     <div class="product-info">
                                         <h6 class="product-title">
-                                            <a href="{{ url('shop') }}">{{ $barang->nama_barang }}</a>
+
                                         </h6>
                                       @endforeach
                                         
@@ -46,16 +46,7 @@
                              @endif
                              <!-- product-item end -->
                             <!-- product-item start -->
-                       
-                            <!-- product-item end -->
-                            <!-- product-item start -->
-                        
-                            <!-- product-item end -->
-                            <!-- product-item start -->
-                          
-                            <!-- product-item end -->
-                            <!-- product-item start -->
-                           
+
                             <!-- product-item end -->
                         </div>
                     </div>          
