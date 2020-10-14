@@ -15,7 +15,7 @@
                     </div>                    
                     <div class="row">
                         <div class="col-md-5">
-                            <div class="about-photo p-20 bg-img-1">
+                          <br>  <div class="about-photo p-20 bg-img-1">
                                 <img src="img/others/about.jpg" alt="">
                             </div>
                         </div>
@@ -25,12 +25,14 @@
 
 
                                 <h6><b>OUR VISION</b></h6>
-                                <p>- Menjadi penyedia peralatan kesehatan terkemuka baik dalam daerah maupun luar daerah.</p>
-                                <p>- Menjadi distributor alat kesehatan yang terpercaya dengan produk berkualitas dan pelayanan yang memuaskan.</p>
+                                <p>- Menjadi penyedia peralatan kesehatan terkemuka baik dalam daerah maupun luar daerah
+                                <br>- Menjadi distributor alat kesehatan yang terpercaya dengan produk berkualitas dan pelayanan yang memuaskan.</br>
+                                </p>
 
                                 <h6><b>OUR MISION</b></h6>
-                                <p>- Memenuhi kebutuhan masyarakat akan peralatan kesehatan dengan menyalurkan produk terbaik dari segi keamanan dan kualitas.</p>
-                                <p>- Mencapai kepuasan pelanggan dengan memberikan pelayanan terbaik dari SDM yang professional..</p>
+                                <p>- Memenuhi kebutuhan masyarakat akan peralatan kesehatan dengan menyalurkan produk terbaik dari segi keamanan dan kualitas.
+                                <br>- Mencapai kepuasan pelanggan dengan memberikan pelayanan terbaik dari SDM yang professional. </br>
+                                </p>
                             </div>
                         </div>
                     </div>
