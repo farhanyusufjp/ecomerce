@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/','pagecontroller@home');
+Route::get('/','homecontroller@home');
 
 Route::get('barang','BarangController@index');
 

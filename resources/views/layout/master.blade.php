@@ -70,7 +70,7 @@
                                     <li>
                                         <a href="{{ url('login') }}">
                                             <i class="zmdi zmdi-lock"></i>
-                                            Login
+                                            Loginssss
                                         </a>
                                     </li>
                                 </ul>
@@ -87,8 +87,8 @@
                             <!-- logo -->
                             <div class="col-md-2 col-sm-6 col-xs-12">
                                 <div class="logo">
-                                    <a href="{{ url('home') }}">
-                                        <img src="img/logo/" alt="main logo">
+                                    <a href="{{ url('/') }}">
+                                        <img src="img/logo/logo" alt="main logo">
                                     </a>
                                 </div>
                             </div>
