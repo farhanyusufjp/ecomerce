@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('content')
+@include('layout.modalshop')
 
   <div id="page-content" class="page-wrapper">
 
@@ -39,571 +40,47 @@
                                 <!-- Tab Content start -->
                                 <div class="tab-content">
                                     <!-- grid-view -->
+                                  
                                     <div role="tabpanel" class="tab-pane active" id="grid-view">
                                         <div class="row">
                                             <!-- product-item start -->
+                                         
                                             <div class="col-md-4 col-sm-4 col-xs-12">
+                                                 @foreach($barang_list as $barang)
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="{{ url('detailshop') }}">
                                                             <img src="img/product/CMC.jpg" alt=""/>
                                                         </a>
                                                     </div>
+                                                     
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="{{ url('detailshop') }}">CLINCHEM MULTI CONTROL LV I </a>
+                                                            <a href="{{ url('detailshop') }}">{{ $barang->nama_barang}}</a>
                                                         </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                           <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 100.000</h3>
+                                                        
+                                                        <h3 class="pro-price"> {{ $barang->harga_pokok}}</h3>
+                                                         
                                                         <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
+                                                           
                                                             <li>
                                                                 <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
                                                             </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
+                                                           
+                                                          
                                                         </ul>
+
                                                     </div>
+
                                                 </div>
+                                                 @endforeach
                                             </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/CL.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">M-18 CFL LYSE</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 150.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/CL53.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">M-53 CLEANSER</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 300.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/TCC.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">TABUNG CLOT ACTIVATOR</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 230.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/TE.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">TABUNG EDTA</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 300.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/WJ.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">WIDAL B-JESS</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 150.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/TCM.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">TOTAL CHOLESTEROL MINDRAY</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 100.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/L(I).jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">M-53 LEO (I) LYSE</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 300.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/LL(II).jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="single-product.html">M-53 LEO (II) LYSE</a>
-                                                        </h6>
-                                                        <div class="pro-rating">
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                        </div>
-                                                        <h3 class="pro-price">Rp 200.000</h3>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
+
                                         </div>
                                     </div>
-                                    <!-- list-view -->
-                                    <div role="tabpanel" class="tab-pane" id="list-view">
-                                        <div class="row">
-                                            <!-- product-item start -->
-                                            <div class="col-md-12">
-                                                <div class="shop-list product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/7.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <div class="clearfix">
-                                                            <h6 class="product-title f-left">
-                                                                <a href="single-product.html">Dummy Product Name </a>
-                                                            </h6>
-                                                            <div class="pro-rating f-right">
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <h6 class="brand-name mb-30">Brand Name</h6>
-                                                        <h3 class="pro-price">$ 869.00</h3>
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-12">
-                                                <div class="shop-list product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/10.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <div class="clearfix">
-                                                            <h6 class="product-title f-left">
-                                                                <a href="single-product.html">Dummy Product Name </a>
-                                                            </h6>
-                                                            <div class="pro-rating f-right">
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <h6 class="brand-name mb-30">Brand Name</h6>
-                                                        <h3 class="pro-price">$ 869.00</h3>
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-12">
-                                                <div class="shop-list product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/4.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <div class="clearfix">
-                                                            <h6 class="product-title f-left">
-                                                                <a href="single-product.html">Dummy Product Name </a>
-                                                            </h6>
-                                                            <div class="pro-rating f-right">
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <h6 class="brand-name mb-30">Brand Name</h6>
-                                                        <h3 class="pro-price">$ 869.00</h3>
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-12">
-                                                <div class="shop-list product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/8.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <div class="clearfix">
-                                                            <h6 class="product-title f-left">
-                                                                <a href="single-product.html">Dummy Product Name </a>
-                                                            </h6>
-                                                            <div class="pro-rating f-right">
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <h6 class="brand-name mb-30">Brand Name</h6>
-                                                        <h3 class="pro-price">$ 869.00</h3>
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                            <!-- product-item start -->
-                                            <div class="col-md-12">
-                                                <div class="shop-list product-item">
-                                                    <div class="product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="img/product/2.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-info">
-                                                        <div class="clearfix">
-                                                            <h6 class="product-title f-left">
-                                                                <a href="single-product.html">Dummy Product Name </a>
-                                                            </h6>
-                                                            <div class="pro-rating f-right">
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <h6 class="brand-name mb-30">Brand Name</h6>
-                                                        <h3 class="pro-price">$ 869.00</h3>
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                        <ul class="action-button">
-                                                            <li>
-                                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- product-item end -->
-                                        </div>                                        
-                                    </div>
+                                 </div>
                                 </div>
-                                <!-- Tab Content end -->
-                                <!-- shop-pagination start -->
-                                <ul class="shop-pagination box-shadow text-center ptblr-10-30">
+                                      <ul class="shop-pagination box-shadow text-center ptblr-10-30">
                                     <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
                                     <li><a href="#">01</a></li>
                                     <li><a href="#">02</a></li>
@@ -612,9 +89,11 @@
                                     <li><a href="#">05</a></li>
                                     <li class="active"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
                                 </ul>
-                                <!-- shop-pagination end -->
+                                       
                             </div>
-                        </div>
+
+       
+                       
                         <div class="col-md-3 col-md-pull-9 col-sm-12">
                             <!-- widget-search -->
                             <aside class="widget-search mb-30">
@@ -628,7 +107,7 @@
                                 <h6 class="widget-title border-left mb-20">Categories</h6>
                                 <div id="cat-treeview" class="product-cat">
                                     <ul>
-                                        <li class="closed"><a href="#">Alat Kebersihan</a>
+                                        <li class="closed"><a href="indexalkeb">Alat Kebersihan</a>
                                         
                                         </li>                                       
                                         <li class="closed"><a href="#">Listrik</a>
@@ -671,7 +150,7 @@
                                     <li class="color-5"><a href="#">Electric Purple</a></li>
                                     <li class="color-6"><a href="#">Atlantis</a></li>
                                 </ul> -->
-                            </aside>
+ 
                             <!-- operating-system -->
                        <!--      <aside class="widget operating-system box-shadow mb-30">
                                 <h6 class="widget-title border-left mb-20">operating system</h6>

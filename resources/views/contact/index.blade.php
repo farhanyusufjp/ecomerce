@@ -31,52 +31,19 @@
                 </div>
             </div>
             <!-- ADDRESS SECTION END --> 
-            
             <!-- GOOGLE MAP SECTION START -->
             <div class="google-map-section">
                 <div class="container-fluid">
                     <div class="google-map plr-185">
-                        <div id="googleMap"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5185522800057!2d106.95310811458937!3d-6.326780995421345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6993c3766f12dd%3A0x5917dba9dffd9ef5!2sIntan%20sarana%20sejahtera!5e0!3m2!1sid!2sid!4v1603356714041!5m2!1sid!2sid" width="1120" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
             <!-- GOOGLE MAP SECTION END -->
             
             <!-- MESSAGE BOX SECTION START -->
-            <div class="message-box-section mt--50 mb-80">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="message-box box-shadow white-bg">
-                                <form id="contact-form" action="mail.php" method="post">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h4 class="blog-section-title border-left mb-30">get in touch</h4>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" placeholder="Your name here">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="email" placeholder="Your email here">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="subject" placeholder="Subject here">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="phone" placeholder="Your phone here">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <textarea class="custom-textarea" name="message" placeholder="Message"></textarea>
-                                            <button class="submit-btn-1 mt-30 btn-hover-1" type="submit">submit message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <p class="form-messege"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
             <!-- MESSAGE BOX SECTION END --> 
         </section>
         <!-- End page content -->
