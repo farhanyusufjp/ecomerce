@@ -23,6 +23,7 @@
                     <div class="featured-product">
                         <div class="row active-featured-product slick-arrow-2">
                             <!-- product-item start -->
+                        @foreach($barang_list as $barang)
                             <div class="col-xs-12">
                                 <div class="product-item">
                                     <div class="product-img">
@@ -30,20 +31,17 @@
                                             <img src="img/product/CMC.jpg" alt=""/>
                                         </a>
                                     </div>
-                                       @if (!empty($barang_list))
-                                      @foreach($barang_list as $barang)
                                     <div class="product-info">
                                         <h6 class="product-title">
-
+                                           <a href="{{ url('shop')}}">{{ $barang->nama_barang}}</a>
+                                          
                                         </h6>
-                                      @endforeach
                                         
                                     </div>
                                 </div>
                             </div>
-                            @else
-                             <p>Tidak ada Data barang</p>
-                             @endif
+                        @endforeach
+                        
                              <!-- product-item end -->
                             <!-- product-item start -->
 
