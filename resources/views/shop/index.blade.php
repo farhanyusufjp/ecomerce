@@ -2,6 +2,8 @@
 @section('content')
 @include('layout.modalshop')
 
+
+
   <div id="page-content" class="page-wrapper">
 
             <!-- SHOP SECTION START -->
@@ -17,9 +19,9 @@
                                         <li class="active">
                                             <a href="#grid-view" data-toggle="tab"><i class="zmdi zmdi-view-module"></i></a>
                                         </li>
-                                        <li>
-                                            <a href="#list-view" data-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a>
-                                        </li>
+                                        
+                                    
+                                  
                                     </ul>
                                     <!-- short-by -->
                                     <div class="short-by f-left text-center">
@@ -49,22 +51,22 @@
                                                  @foreach($barang_list as $barang)
                                                 <div class="product-item">
                                                     <div class="product-img">
-                                                        <a href="{{ url('detailshop') }}">
+                                                        <a href="{{ url('shop/'.$barang->kd_barang) }}">
                                                             <img src="img/product/CMC.jpg" alt=""/>
                                                         </a>
                                                     </div>
                                                      
                                                     <div class="product-info">
                                                         <h6 class="product-title">
-                                                            <a href="{{ url('detailshop') }}">{{ $barang->nama_barang}}</a>
+                                                            <a href="{{ url('shop/'.$barang->kd_barang) }}">{{ $barang->nama_barang}}</a>
                                                         </h6>
                                                         
-                                                        <h3 class="pro-price"> {{ $barang->harga_pokok}}</h3>
+                                                        <h3 class="pro-price"> Rp. {{ $barang->harga_pokok }}</h3>
                                                          
                                                         <ul class="action-button">
                                                            
                                                             <li>
-                                                                <a href="#" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                                <a href="#{{ $barang->kd_barang }}" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
                                                             </li>
                                                            
                                                           
@@ -80,6 +82,7 @@
                                     </div>
                                  </div>
                                 </div>
+                              
                                       <ul class="shop-pagination box-shadow text-center ptblr-10-30">
                                     <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
                                     <li><a href="#">01</a></li>
@@ -128,44 +131,7 @@
                                     </ul>
                                 </div>
                             </aside>
-                            <!-- shop-filter -->
-                        <!--     <aside class="widget shop-filter box-shadow mb-30">
-                                <h6 class="widget-title border-left mb-20">Price</h6>
-                                <div class="price_filter">
-                                    <div class="price_slider_amount">
-                                        <input type="submit"  value="You range :"/> 
-                                        <input type="text" id="amount" name="price"  placeholder="Add Your Price" /> 
-                                    </div>
-                                    <div id="slider-range"></div>
-                                </div>
-                            </aside> -->
-                            <!-- widget-color -->
-                         <!--    <aside class="widget widget-color box-shadow mb-30">
-                                <h6 class="widget-title border-left mb-20">color</h6>
-                                <ul>
-                                    <li class="color-1"><a href="#">LightSalmon</a></li>
-                                    <li class="color-2"><a href="#">Dark Salmon</a></li>
-                                    <li class="color-3"><a href="#">Tomato</a></li>
-                                    <li class="color-4"><a href="#">Deep Sky Blue</a></li>
-                                    <li class="color-5"><a href="#">Electric Purple</a></li>
-                                    <li class="color-6"><a href="#">Atlantis</a></li>
-                                </ul> -->
- 
-                            <!-- operating-system -->
-                       <!--      <aside class="widget operating-system box-shadow mb-30">
-                                <h6 class="widget-title border-left mb-20">operating system</h6>
-                                <form action="action_page.php">
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">Windows Phone</label><br>
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">Bleckgerry ios</label><br>
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">Android</label><br>
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">ios</label><br>
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">Windows Phone</label><br>
-                                    <label><input type="checkbox" name="operating-1" value="phone-1">Symban</label><br>
-                                    <label class="mb-0"><input type="checkbox" name="operating-1" value="phone-1">Bleckgerry os</label><br>
-                                </form>
-                            </aside> -->
-                            <!-- widget-product -->
-                           <!-- -->
+         
                         </div>
                     </div>
                 </div>

@@ -10,8 +10,8 @@
                         <div class="col-sm-4 col-xs-12">
                             <div class="contact-address box-shadow">
                                 <i class="zmdi zmdi-pin"></i>
-                                <h6>Green Jati Kartika 2,</h6>
-                                <h6>Blok B/14, Kota Bekasi</h6>
+                                <h6>Blok B, Perumahan Green Jatikartika 2, Jl. H. Jaiman No.11, RT.004/RW.002, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426,</h6>
+                               
                             </div>
                         </div>
                         <div class="col-sm-4 col-xs-12">

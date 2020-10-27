@@ -17,7 +17,10 @@ Route::get('/','homecontroller@home');
 Route::get('barang','BarangController@index');
 
 Route::get('shop','controllerShop@index');
-Route::get('detailshop','controllerShop@detail');
+Route::post('/getdata', 'controllerShop@getdata')->name('getdata');
+// Route::get('/detail/{kd_barang}','controllerShop@detail');
+Route::get('shop/{kd_barang}','controllerShop@detail');
+// Route::get('/modal/{kd_barang}','controllerSop@show');
 Route::get('checkout','controllerShop@checkout');
 Route::get('wishlist','controllerShop@wishlist');
 Route::get('chart','controllerShop@chart');

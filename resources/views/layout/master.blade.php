@@ -52,21 +52,10 @@
                                 <p class="mb-0 roboto">021-286767710</p>
                             </div>
                         </div>
-                       <!--  <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-6 col-xs-12">
                             <div class="top-link clearfix">
                                 <ul class="link f-right">
-                                    <li>
-                                        <a href="{{ url('myacc')}}">
-                                            <i class="zmdi zmdi-account"></i>
-                                            My Account
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('wishlist') }} ">
-                                            <i class="zmdi zmdi-favorite"></i>
-                                            Wish List (0)
-                                        </a>
-                                    </li>
+                                  
                                     <li>
                                         <a href="{{ url('login') }}">
                                             <i class="zmdi zmdi-lock"></i>
@@ -75,7 +64,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
