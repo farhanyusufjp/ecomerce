@@ -9,7 +9,7 @@ class controllerShop extends Controller
 {
      public function index() {
         $halaman ='barang';
-        $barang_list = Barang::orderBy('kd_barang')->paginate(5);
+        $barang_list = Barang::orderBy('kd_barang')->paginate(9);
        
 
         $barang_list2 = Barang::orderBy('kd_barang')->first();

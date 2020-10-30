@@ -13,31 +13,7 @@
                         <div class="col-md-9 col-md-push-3 col-sm-12">
                             <div class="shop-content">
                                 <!-- shop-option start -->
-                                <div class="shop-option box-shadow mb-30 clearfix">
-                                    <!-- Nav tabs -->
-                                    <ul class="shop-tab f-left" role="tablist">
-                                        <li class="active">
-                                            <a href="#grid-view" data-toggle="tab"><i class="zmdi zmdi-view-module"></i></a>
-                                        </li>
-                                        
-                                    
-                                  
-                                    </ul>
-                                    <!-- short-by -->
-                                    <div class="short-by f-left text-center">
-                                        <span>Sort by :</span>
-                                        <select>
-                                            <option value="volvo">Newest items</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                        </select> 
-                                    </div> 
-                                    <!-- showing -->
-                                    <div class="showing f-right text-right">
-                                        <span>Showing : 01-09 of 17.</span>
-                                    </div>                                   
-                                </div>
+                                
                                 <!-- shop-option end -->
                                 <!-- Tab Content start -->
                                 <div class="tab-content">
@@ -46,9 +22,9 @@
                                     <div role="tabpanel" class="tab-pane active" id="grid-view">
                                         <div class="row">
                                             <!-- product-item start -->
-                                         
+                                            @foreach($barang_list as $barang)
                                             <div class="col-md-4 col-sm-4 col-xs-12">
-                                                 @foreach($barang_list as $barang)
+                                                 
                                                 <div class="product-item">
                                                     <div class="product-img">
                                                         <a href="{{ url('shop/'.$barang->kd_barang) }}">
@@ -65,9 +41,9 @@
                                                          
                                                         <ul class="action-button">
                                                            
-                                                            <li>
+                                                          <!--   <li>
                                                                 <a href="#{{ $barang->kd_barang }}" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                            
                                                           
                                                         </ul>
@@ -75,22 +51,20 @@
                                                     </div>
 
                                                 </div>
-                                                 @endforeach
+                                                 
                                             </div>
-
+                                            @endforeach
                                         </div>
                                     </div>
                                  </div>
                                 </div>
+                                
+                        <!--         <div id ="paging">
+                                    {{ $barang_list->links()}}
+                                </div> -->
                               
-                                      <ul class="shop-pagination box-shadow text-center ptblr-10-30">
-                                    <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
-                                    <li><a href="#">01</a></li>
-                                    <li><a href="#">02</a></li>
-                                    <li><a href="#">03</a></li>
-                                    <li><a href="#">...</a></li>
-                                    <li><a href="#">05</a></li>
-                                    <li class="active"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
+                                    <ul class="shop-pagination box-shadow text-center ptblr-10-30">
+                              {{ $barang_list->links()}}
                                 </ul>
                                        
                             </div>
