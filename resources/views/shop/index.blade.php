@@ -59,12 +59,10 @@
                                  </div>
                                 </div>
                                 
-                        <!--         <div id ="paging">
-                                    {{ $barang_list->links()}}
-                                </div> -->
+                    
                               
                                     <ul class="shop-pagination box-shadow text-center ptblr-10-30">
-                              {{ $barang_list->links()}}
+                                                 {{ $barang_list->links()}}
                                 </ul>
                                        
                             </div>
