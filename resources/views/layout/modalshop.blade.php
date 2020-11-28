@@ -15,7 +15,7 @@
                                 </div><!-- .product-images -->
                                 
                                 <div class="product-info">
-                                    <h1>{{ $barang_list2->nama_barang}}</h1>
+                                    <h1>{{ $barang_list2->nm_barang}}</h1>
                                     <div class="price-box-3">
                                         <div class="s-price-box">
                                             <span class="new-price">£160.00</span>

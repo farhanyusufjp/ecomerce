@@ -2,6 +2,21 @@
 @section('content')
 @include('layout.modalshop')
 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
 
 
   <div id="page-content" class="page-wrapper">
@@ -18,39 +33,43 @@
                                 <!-- Tab Content start -->
                                 <div class="tab-content">
                                     <!-- grid-view -->
-                                  
+                                    
                                     <div role="tabpanel" class="tab-pane active" id="grid-view">
                                         <div class="row">
                                             <!-- product-item start -->
                                             @foreach($barang_list as $barang)
                                             <div class="col-md-4 col-sm-4 col-xs-12">
-                                                 
-                                                <div class="product-item">
-                                                    <div class="product-img">
-                                                        <a href="{{ url('shop/'.$barang->kd_barang) }}">
-                                                            <img src="img/product/CMC.jpg" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                     
-                                                    <div class="product-info">
-                                                        <h6 class="product-title">
-                                                            <a href="{{ url('shop/'.$barang->kd_barang) }}">{{ $barang->nama_barang}}</a>
-                                                        </h6>
-                                                        
-                                                        <h3 class="pro-price"> Rp. {{ $barang->harga_pokok }}</h3>
+                                                <table id="myTable" width="100%">
+                                                <tr>
+                                                    <td>
+                                                    <div class="product-item">
+                                                        <div class="product-img">
+                                                            <a href="{{ url('shop/'.$barang->kd_barang) }}">
+                                                                <img src="img/product/CMC.jpg" alt=""/>
+                                                            </a>
+                                                        </div>
                                                          
-                                                        <ul class="action-button">
-                                                           
-                                                          <!--   <li>
-                                                                <a href="#{{ $barang->kd_barang }}" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                            </li> -->
-                                                           
-                                                          
-                                                        </ul>
+                                                        <div class="product-info">
+                                                            <h6 class="product-title">
+                                                                <a href="{{ url('shop/'.$barang->kd_barang) }}">{{ $barang->nama_barang}}</a>
+                                                            </h6>
+                                                            
+                                                            <h3 class="pro-price"> Rp. {{ $barang->harga_pokok }}</h3>
+                                                             
+                                                            <ul class="action-button">
+                                                               
+                                                                <li>
+                                                                    <a href="#{{ $barang->kd_barang }}" data-toggle="modal"  data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                                </li>
+                                                               
+                                                              
+                                                            </ul>
 
+                                                        </div>
                                                     </div>
-
-                                                </div>
+                                                </td>
+                                            </tr>
+                                        </table>
                                                  
                                             </div>
                                             @endforeach
@@ -70,11 +89,13 @@
        
                        
                         <div class="col-md-3 col-md-pull-9 col-sm-12">
+
+                            
                             <!-- widget-search -->
                             <aside class="widget-search mb-30">
-                                <form action="#">
-                                    <input type="text" placeholder="Search here...">
-                                    <button type="submit"><i class="zmdi zmdi-search"></i></button>
+                                <!-- <form action="#"> -->
+                                    <input id="myInput" input type="text" placeholder="Search here...">
+                                    <!-- <button type="submit"><i class="zmdi zmdi-search"></i></button> -->
                                 </form>
                             </aside>
                             <!-- widget-categories -->
@@ -82,22 +103,22 @@
                                 <h6 class="widget-title border-left mb-20">Categories</h6>
                                 <div id="cat-treeview" class="product-cat">
                                     <ul>
-                                        <li class="closed"><a href="indexalkeb">Alat Kebersihan</a>
+                                        <li class="closed"><a href="{{url('alkeb')}}">Alat Kebersihan</a>
                                         
                                         </li>                                       
-                                        <li class="closed"><a href="#">Listrik</a>
+                                        <li class="closed"><a href="{{url('listrik')}}">Listrik</a>
                                            
                                         </li>
-                                        <li class="closed"><a href="#">Kimia</a>
+                                        <li class="closed"><a href="{{url('kimia')}}">Kimia</a>
                                            
                                         </li>
-                                        <li class="closed"><a href="#">ATK</a>
+                                        <li class="closed"><a href="{{url('ATK')}}">ATK</a>
                                             
                                         </li>
-                                        <li class="closed"><a href="#">BHP</a>
+                                        <li class="closed"><a href="{{url('BHP')}}">BHP</a>
                                             
                                         </li>
-                                        <li class="closed"><a href="#">Alkes</a>
+                                        <li class="closed"><a href="{{url('alkes')}}">Alkes</a>
                                             
                                         </li>
                                     </ul>
